@@ -1,15 +1,16 @@
-import { View, Text } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
 import { style } from "./App.style";
-
+import hotBackground from './assets/hot.png';
+import coldbackground from './assets/cold.png';
 
 export default function App() {
   return (
-    <View style={style.container}>
+    <ImageBackground source={hotBackground} style={style.container}>
       <View style={style.workspace}>
         <View><Text>Température</Text></View>
         <View><Text>Input</Text></View>
         <View><Text>Button</Text></View>
       </View>
-    </View>
+    </ImageBackground>
   );
 }
