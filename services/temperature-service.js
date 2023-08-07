@@ -1,7 +1,7 @@
 import { UNITS } from "../constant";
 
 export const getOpposite = (unit) => {
-    return unit === UNITS.celcius ? UNITS.faranheit : UNITS.celsius;
+    return unit === UNITS.celcius ? UNITS.faranheit : UNITS.celcius;
 }
 
 export const convertTemperature = (unit, value) => {
