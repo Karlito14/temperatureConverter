@@ -14,3 +14,12 @@ export const convertTemperature = (unit, value) => {
     }
 }
 
+export const isIceTemperature = (value, unit) => {
+    if(unit === UNITS.celcius) {
+        return value <= 0;
+    }
+    if(unit === UNITS.faranheit) {
+        return value <= 32;
+    }
+};
+
